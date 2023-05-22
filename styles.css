@@ -28,17 +28,33 @@ body {
 }
 .jumbotron h1 {
   line-height: 0px;
+  margin-bottom: 20px;
 }
 .jumbotron p {
   text-overflow: none;
-  line-height: 60px;
 }
 
+@media only screen and (min-width: 420px) and (max-width: 599px) {
+  h1 {
+    font-size: 29px;
+  }
+}
+@media only screen and (min-width: 366px) and (max-width: 420px) {
+  h1 {
+    font-size: 25px;
+  }
+}
+@media only screen and (max-width: 366px) {
+  h1 {
+    font-size: 21px;
+  }
+}
 .main-content {
   padding-bottom: 100px;
   animation-name: ghost;
   animation-delay: 0s;
   animation-duration: 2s;
+  overflow: auto;
 }
 
 @keyframes ghost {
