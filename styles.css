@@ -74,14 +74,12 @@ footer {
   bottom: 0px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 footer h2 {
   color: grey;
   font-size: 20px;
   margin-bottom: 0px;
-}
-footer ul {
-  margin-left: 20px;
 }
 footer li {
   list-style: none;
