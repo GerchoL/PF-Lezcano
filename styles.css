@@ -116,7 +116,6 @@ footer li {
   justify-content: space-evenly;
   flex-basis: 80%;
   gap: 100px;
-  row-gap: 0px;
 }
 
 .hobbies_texts {
