@@ -72,6 +72,8 @@ footer {
   position: fixed;
   left: 0px;
   bottom: 0px;
+  display: flex;
+  flex-direction: column;
 }
 footer h2 {
   color: grey;
@@ -87,6 +89,7 @@ footer li {
 }
 
 .container-fluid {
+  height: calc(100vh - 212px);
   background-color: rgb(222, 194, 248);
   background-size: cover;
   background-position: center;
@@ -97,8 +100,9 @@ footer li {
   justify-content: center;
 }
 .container-fluid img {
+  height: 450px;
   max-height: 450px;
-  width: 100%;
+  width: 450px;
   max-width: 450px;
   padding: 32px;
 }
@@ -113,6 +117,7 @@ footer li {
   justify-content: space-evenly;
   flex-basis: 80%;
   gap: 100px;
+  padding-bottom: 30px;
 }
 
 .hobbies_texts {
