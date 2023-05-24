@@ -81,10 +81,6 @@ footer h2 {
   font-size: 20px;
   margin-bottom: 0px;
 }
-footer li {
-  list-style: none;
-  display: inline;
-}
 
 .container-fluid {
   height: calc(100vh - 212px);
@@ -126,6 +122,7 @@ footer li {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-left: 380px;
+  justify-content: center;
 }
 .work-exp img {
   height: 350px;
