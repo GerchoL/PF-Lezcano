@@ -105,6 +105,42 @@ footer h2 {
   font-family: "Abel", sans-serif;
 }
 
+.home-content {
+  padding-bottom: 50px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 425px) {
+  .home-content p {
+    width: 400px;
+  }
+  .home-content img {
+    width: 400px;
+    height: 400px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .home-content p {
+    width: 350px;
+  }
+  .home-content img {
+    width: 350px;
+    height: 350px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .home-content p {
+    width: 300px;
+  }
+  .home-content img {
+    width: 300px;
+    height: 300px;
+  }
+}
 .hobbies_content {
   display: flex;
   flex-wrap: wrap;
@@ -115,14 +151,40 @@ footer h2 {
 }
 
 .hobbies_texts {
-  height: 125px !important;
+  height: 125px;
+  text-align: center;
 }
 
+@media only screen and (max-width: 425px) {
+  .hobbies_content .hobbies_texts {
+    width: 400px;
+  }
+  .hobbies_content img {
+    width: 400px;
+    height: 400px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .hobbies_content .hobbies_texts {
+    width: 350px;
+  }
+  .hobbies_content img {
+    width: 350px;
+    height: 350px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .hobbies_content .hobbies_texts {
+    width: 300px;
+  }
+  .hobbies_content img {
+    width: 300px;
+    height: 300px;
+  }
+}
 .work-exp {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin-left: 380px;
-  justify-content: center;
 }
 .work-exp img {
   height: 350px;
@@ -150,10 +212,31 @@ footer h2 {
     grid-template-columns: 1fr;
   }
 }
+@media only screen and (max-width: 320px) {
+  .work-exp .work-exp-acn h2,
+  .work-exp .work-exp-kc h2 {
+    font-size: 21px;
+  }
+  .work-exp .work-exp-acn h3,
+  .work-exp .work-exp-kc h3 {
+    font-size: 20px;
+  }
+  .work-exp .work-exp-acn img,
+  .work-exp .work-exp-kc img {
+    width: 300px;
+    height: 300px;
+  }
+  .work-exp .work-exp-acn p,
+  .work-exp .work-exp-kc p {
+    width: 300px;
+    height: 300px;
+  }
+}
 .skillslist {
   font-family: "Abel", sans-serif;
   display: grid;
   padding: 32px;
+  padding-bottom: 50px;
 }
 .skillslist p {
   width: 300px;
@@ -301,4 +384,8 @@ footer h2 {
 .contactpage .form label,
 .contactpage .form textarea {
   display: block;
+}
+
+.location {
+  padding-bottom: 50px;
 }/*# sourceMappingURL=styles.css.map */

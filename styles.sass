@@ -50,7 +50,6 @@ body
     animation-name: ghost
     animation-delay: 0s
     animation-duration: 2s
-    //overflow: auto
 
 @keyframes ghost
     0%
@@ -98,6 +97,36 @@ footer
         width: 450px
         font-family: 'Abel', sans-serif
 
+.home-content
+    padding-bottom: 50px
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+    align-items: center
+    justify-content: center
+
+@media only screen and (max-width: 425px)
+    .home-content
+        p
+            width: 400px
+        img
+            width: 400px
+            height: 400px
+@media only screen and (max-width: 375px)
+    .home-content
+        p
+            width: 350px
+        img
+            width: 350px
+            height: 350px
+@media only screen and (max-width: 320px)
+    .home-content
+        p
+            width: 300px
+        img
+            width: 300px
+            height: 300px
+
 //Hobbies page
 
 .hobbies_content
@@ -109,15 +138,41 @@ footer
     padding-bottom: 30px
 
 .hobbies_texts
-    height: 125px !important
+    height: 125px
+    text-align: center
+
+@media only screen and (max-width: 425px)
+    .hobbies_content
+        .hobbies_texts
+            width: 400px
+        img
+            width: 400px
+            height: 400px
+
+@media only screen and (max-width: 375px)
+    .hobbies_content
+        .hobbies_texts
+            width: 350px
+        img
+            width: 350px
+            height: 350px
+
+@media only screen and (max-width: 320px)
+    .hobbies_content
+        .hobbies_texts
+            width: 300px
+        img
+            width: 300px
+            height: 300px
+
+
 
 //Work page
 
 .work-exp
     display: grid
     grid-template-columns: 1fr 1fr
-    margin-left: 380px
-    justify-content: center
+    //margin-left: 380px
     img
         height: 350px
         width: 350px
@@ -140,12 +195,28 @@ footer
     .work-exp
         grid-template-columns: 1fr
 
+@media only screen and (max-width: 320px)
+    .work-exp
+        .work-exp-acn,
+        .work-exp-kc
+            h2
+                font-size: 21px
+            h3
+                font-size: 20px
+            img
+                width: 300px
+                height: 300px
+            p
+                width: 300px
+                height: 300px
+
 // I'm using the SKILLS page to demostrate GRIDS knowledge
 
 .skillslist
     font-family: 'Abel', sans-serif
     display: grid
     padding: 32px
+    padding-bottom: 50px
     p
         width: 300px
 
@@ -267,3 +338,5 @@ footer
         label,
         textarea
             display: block
+.location
+    padding-bottom: 50px
