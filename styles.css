@@ -52,6 +52,7 @@ body {
   animation-name: ghost;
   animation-delay: 0s;
   animation-duration: 2s;
+  margin-bottom: 56px;
 }
 
 @keyframes ghost {
@@ -151,7 +152,6 @@ footer h2 {
 }
 
 .hobbies_texts {
-  height: 125px;
   text-align: center;
 }
 
@@ -187,19 +187,23 @@ footer h2 {
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
-.work-exp img {
-  height: 350px;
-  width: 350px;
+.work-exp .work-exp-acn img,
+.work-exp .work-exp-kc img {
+  height: 300px;
+  width: 300px;
 }
-.work-exp p {
+.work-exp .work-exp-acn p,
+.work-exp .work-exp-kc p {
+  width: 300px;
+  font-family: "Abel", sans-serif;
+}
+.work-exp .work-exp-acn h2,
+.work-exp .work-exp-kc h2 {
   width: 400px;
   font-family: "Abel", sans-serif;
 }
-.work-exp h2 {
-  width: 400px;
-  font-family: "Abel", sans-serif;
-}
-.work-exp h3 {
+.work-exp .work-exp-acn h3,
+.work-exp .work-exp-kc h3 {
   width: 400px;
   font-family: "Abel", sans-serif;
 }
@@ -212,15 +216,16 @@ footer h2 {
   .work-exp .work-exp-acn,
   .work-exp .work-exp-kc {
     width: 200px;
-    height: 200px;
   }
   .work-exp .work-exp-acn h2,
   .work-exp .work-exp-kc h2 {
     font-size: 20px;
+    width: 250px;
   }
   .work-exp .work-exp-acn h3,
   .work-exp .work-exp-kc h3 {
     font-size: 19px;
+    width: 200px;
   }
   .work-exp .work-exp-acn img,
   .work-exp .work-exp-kc img {
@@ -230,7 +235,31 @@ footer h2 {
   .work-exp .work-exp-acn p,
   .work-exp .work-exp-kc p {
     width: 200px;
-    height: 200px;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 425px) {
+  .work-exp .work-exp-acn,
+  .work-exp .work-exp-kc {
+    width: 250px;
+  }
+  .work-exp .work-exp-acn h2,
+  .work-exp .work-exp-kc h2 {
+    font-size: 20px;
+    width: 300px;
+  }
+  .work-exp .work-exp-acn h3,
+  .work-exp .work-exp-kc h3 {
+    font-size: 19px;
+    width: 300px;
+  }
+  .work-exp .work-exp-acn img,
+  .work-exp .work-exp-kc img {
+    width: 250px;
+    height: 250px;
+  }
+  .work-exp .work-exp-acn p,
+  .work-exp .work-exp-kc p {
+    width: 300px;
   }
 }
 .skillslist {

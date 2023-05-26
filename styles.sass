@@ -50,6 +50,7 @@ body
     animation-name: ghost
     animation-delay: 0s
     animation-duration: 2s
+    margin-bottom: 56px
 
 @keyframes ghost
     0%
@@ -138,7 +139,7 @@ footer
     padding-bottom: 30px
 
 .hobbies_texts
-    height: 125px
+    //height: 125px
     text-align: center
 
 @media only screen and (max-width: 425px)
@@ -173,47 +174,57 @@ footer
     display: flex
     justify-content: space-evenly
     flex-wrap: wrap
-    // display: grid
-    // grid-template-columns: 1fr 1fr
-    //margin-left: 380px
-    img
-        height: 350px
-        width: 350px
-    p
-        width: 400px
-        font-family: 'Abel', sans-serif
-    h2
-        width: 400px
-        font-family: 'Abel', sans-serif
-    h3
-        width: 400px
-        font-family: 'Abel', sans-serif
-
     .work-exp-acn,
     .work-exp-kc
+        img
+            height: 300px
+            width: 300px
+        p
+            width: 300px
+            font-family: 'Abel', sans-serif
+        h2
+            width: 400px
+            font-family: 'Abel', sans-serif
+        h3
+            width: 400px
+            font-family: 'Abel', sans-serif
         &:hover
             transform: scale(1.2)
 
-@media only screen and (max-width: 768px)
-    .work-exp
-        // grid-template-columns: 1fr
 
 @media only screen and (max-width: 320px)
     .work-exp
         .work-exp-acn,
         .work-exp-kc
             width: 200px
-            height: 200px
             h2
                 font-size: 20px
+                width: 250px
             h3
                 font-size: 19px
+                width: 200px
             img
                 width: 200px
                 height: 200px
             p
                 width: 200px
-                height: 200px
+
+@media only screen and (min-width: 375px) and (max-width: 425px)
+    .work-exp
+        .work-exp-acn,
+        .work-exp-kc
+            width: 250px
+            h2
+                font-size: 20px
+                width: 300px
+            h3
+                font-size: 19px
+                width: 300px
+            img
+                width: 250px
+                height: 250px
+            p
+                width: 300px
 
 // I'm using the SKILLS page to demostrate GRIDS knowledge
 
