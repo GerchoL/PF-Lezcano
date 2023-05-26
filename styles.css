@@ -183,8 +183,9 @@ footer h2 {
   }
 }
 .work-exp {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 .work-exp img {
   height: 350px;
@@ -207,29 +208,29 @@ footer h2 {
   transform: scale(1.2);
 }
 
-@media only screen and (max-width: 768px) {
-  .work-exp {
-    grid-template-columns: 1fr;
-  }
-}
 @media only screen and (max-width: 320px) {
+  .work-exp .work-exp-acn,
+  .work-exp .work-exp-kc {
+    width: 200px;
+    height: 200px;
+  }
   .work-exp .work-exp-acn h2,
   .work-exp .work-exp-kc h2 {
-    font-size: 21px;
+    font-size: 20px;
   }
   .work-exp .work-exp-acn h3,
   .work-exp .work-exp-kc h3 {
-    font-size: 20px;
+    font-size: 19px;
   }
   .work-exp .work-exp-acn img,
   .work-exp .work-exp-kc img {
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
   }
   .work-exp .work-exp-acn p,
   .work-exp .work-exp-kc p {
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
   }
 }
 .skillslist {

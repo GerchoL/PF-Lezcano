@@ -170,8 +170,11 @@ footer
 //Work page
 
 .work-exp
-    display: grid
-    grid-template-columns: 1fr 1fr
+    display: flex
+    justify-content: space-evenly
+    flex-wrap: wrap
+    // display: grid
+    // grid-template-columns: 1fr 1fr
     //margin-left: 380px
     img
         height: 350px
@@ -193,22 +196,24 @@ footer
 
 @media only screen and (max-width: 768px)
     .work-exp
-        grid-template-columns: 1fr
+        // grid-template-columns: 1fr
 
 @media only screen and (max-width: 320px)
     .work-exp
         .work-exp-acn,
         .work-exp-kc
+            width: 200px
+            height: 200px
             h2
-                font-size: 21px
-            h3
                 font-size: 20px
+            h3
+                font-size: 19px
             img
-                width: 300px
-                height: 300px
+                width: 200px
+                height: 200px
             p
-                width: 300px
-                height: 300px
+                width: 200px
+                height: 200px
 
 // I'm using the SKILLS page to demostrate GRIDS knowledge
 
