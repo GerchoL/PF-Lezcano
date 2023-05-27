@@ -135,11 +135,10 @@ footer
     flex-wrap: wrap
     justify-content: space-evenly
     flex-basis: 80%
-    gap: 100px
-    padding-bottom: 30px
+    gap: 82px
+    padding-bottom: 50px
 
 .hobbies_texts
-    //height: 125px
     text-align: center
 
 @media only screen and (max-width: 425px)
@@ -197,6 +196,7 @@ footer
         .work-exp-acn,
         .work-exp-kc
             width: 200px
+            padding-bottom: 50px
             h2
                 font-size: 20px
                 width: 250px
@@ -214,6 +214,7 @@ footer
         .work-exp-acn,
         .work-exp-kc
             width: 250px
+            padding-bottom: 50px
             h2
                 font-size: 20px
                 width: 300px
@@ -243,7 +244,7 @@ footer
             &:hover
                 transform: rotate(360deg)
 
-@media only screen and ( max-width: 425px)
+@media only screen and (max-width: 425px)
     .skillslist
         .softtitle
             grid-column: 1/2
@@ -292,7 +293,7 @@ footer
             grid-column: 1/2
             grid-row: 14/15
 
-@media only screen and ( max-width: 768px)
+@media only screen and (min-width: 426px) and (max-width: 768px)
     .skillslist
         .softtitle
             grid-column: 1/3
@@ -405,3 +406,8 @@ footer
             display: block
 .location
     padding-bottom: 50px
+
+@media only screen and (max-width: 374px)
+    .form
+        textarea
+            width: 300px
