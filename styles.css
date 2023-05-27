@@ -279,6 +279,68 @@ footer h2 {
   transform: rotate(360deg);
 }
 
+@media only screen and (max-width: 425px) {
+  .skillslist .softtitle {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    text-align: center;
+    text-decoration: underline;
+  }
+  .skillslist .hardtitle {
+    grid-column: 1/2;
+    grid-row: 8/9;
+    text-align: center;
+    text-decoration: underline;
+  }
+  .skillslist .team {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .skillslist .curiuos {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  .skillslist .willigness {
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+  .skillslist .eagerness {
+    grid-column: 1/2;
+    grid-row: 5/6;
+  }
+  .skillslist .interpersonal {
+    grid-column: 1/2;
+    grid-row: 6/7;
+  }
+  .skillslist .atention {
+    grid-column: 1/2;
+    grid-row: 7/8;
+  }
+  .skillslist .sap {
+    grid-column: 1/2;
+    grid-row: 9/10;
+  }
+  .skillslist .hana {
+    grid-column: 1/2;
+    grid-row: 10/11;
+  }
+  .skillslist .office {
+    grid-column: 1/2;
+    grid-column-grid-row: 11/12;
+  }
+  .skillslist .sql {
+    grid-column: 1/2;
+    grid-row: 12/13;
+  }
+  .skillslist .html {
+    grid-column: 1/2;
+    grid-row: 13/14;
+  }
+  .skillslist .css {
+    grid-column: 1/2;
+    grid-row: 14/15;
+  }
+}
 @media only screen and (max-width: 768px) {
   .skillslist .softtitle {
     grid-column: 1/3;
